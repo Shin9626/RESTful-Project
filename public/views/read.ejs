@@ -1,0 +1,12 @@
+<div class="col-sm-12"  >
+    <div class="col-sm-6"   style="background-color:	#ADD8E6;padding:10px;margin-bottom:5px;">
+      <span class='name'></span>
+      <span><%= userinfo['firstname'] %></span>
+      <span class='name pull-right'>辨識碼：  <span><%= userinfo['myId'] %></span></span><br/>
+      <hr>
+      <span class='name'></span><br/>
+      <p><%= userinfo['occupation'] %></p>
+      <hr>
+      <span class='name pull-right'>發布時間：<%= userinfo['time'].substr(0,25) %></span>
+    </div>
+</div>

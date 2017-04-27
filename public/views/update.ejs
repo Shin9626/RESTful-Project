@@ -1,0 +1,45 @@
+            <!-- main -->
+                <div class="padding">
+                    <div class="full col-sm-9">
+                      
+                      <!-- content -->
+                        <div class="page-header text-muted">
+                          編輯貼文
+                        </div> 
+                        
+                        <!--/top story-->
+                        <div class="row">    
+                          <div class="col-sm-10">
+                              <div id="editpost">
+                                    <div class='name'>暱稱：<%= userinfo['firstname'] %></div><br />
+                                    <div class='name'>貼文：</div> <textarea type="text" id="occupation0" style="width:300px;height:100px;"><%= userinfo['occupation'] %></textarea><br /><br />
+                                  　<a class="btn-update" rel=<%= userinfo['_id']%>><button class="btn btn-primary btn-lg" name=<%= userinfo['_id']%>>送出</button></a>
+                              </div>      
+                              <script src="js/script.js"></script>                  
+                          </div>                     
+                        </div> 
+                  
+                         <div class="col-sm-12">
+                          <div class="page-header text-muted divider">
+                            聯絡我們
+                          </div>
+                        </div>
+                      
+                        <div class="row" id="footer">    
+                          <div class="col-sm-6">
+                             <a href="https://github.com/Shin9626" class="pull-left"><img src="img/git.png" class="img-circle"></a＞
+                            <small class="text-muted"> </small>
+                            <a href="https://plus.google.com/u/0/110006317009842519867" class="pull-left"><img src="img/google.png" class="img-circle"></a>          
+                            <small class="text-muted"> </small>              
+                            <a href="https://www.instagram.com/penspulse" class="pull-left"><img src="img/ig.png" class="img-circle"></a>                                           
+                          </div>
+
+                          <div class="col-sm-12">     
+                            <hr>                     
+                            <a href="#" class="pull-right">©Copyright Inc.</a>
+                          </div>
+                        </div>
+                       
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->

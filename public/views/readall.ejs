@@ -1,0 +1,20 @@
+<% if (userinfos.length) { %>
+<% userinfos.forEach(function(userinfo){ %>
+<div class="col-sm-9"  style="background-color:		#B0E0E6;padding:20px;margin-bottom:10px;" >
+      <span class='name'></span>
+      <span>暱稱：<%= userinfo['firstname'] %></span>
+      <a class='myid' rel=<%= userinfo['_id']%>></a>   
+      <span class='name pull-right'>發布時間：<%= userinfo['time'].substr(0,25) %></span>
+      <hr>
+      <span class='name'></span><br/>
+      <p><%= userinfo['occupation'] %></p>
+      <hr>  
+      <div style="padding-bottom:40px;">
+        <a style="padding-left:5px;padding-right:5px;" href="" class="update pull-left"  rel=<%= userinfo['_id']+userinfo['myId']%>><button class='btn btn-primary'>編輯</button></a>
+        <div id="checkpass1"></div>
+        <a style="padding-left:5px;padding-right:5px;" href="" class="delete pull-left"  rel=<%= userinfo['_id']+userinfo['myId']%>><button class="btn btn-primary">刪除</button></a> 
+        <div id="checkpass"></div>
+      </div>
+</div>
+<% }) %>
+<% } %>

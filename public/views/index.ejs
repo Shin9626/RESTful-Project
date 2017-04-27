@@ -1,0 +1,97 @@
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>邊緣世界 -LIVE ALONE-</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/styles.css" rel="stylesheet">
+		<script src="js/ejs_production.js"></script>
+	</head>
+	<body>
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="column col-sm-3" id="sidebar">
+                <a class="logo" href="" id="logo">邊</a>
+                <ul class="nav">
+					<li><a href="" id="about">關於本站</a>
+                    </li>
+				    <li class="active"><a href="">邊緣留言板</a>
+                    </li>
+                </ul>
+                <ul class="nav hidden-xs" id="sidebar-footer">
+                    <li>
+                      <a href=""><h3>邊緣世界</h3>LIVE ALONE<i class="glyphicon glyphicon-heart-empty"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+          
+            <!-- main -->
+            <div class="column col-sm-9"  id="main">
+                <div class="padding">
+                    <div class="full col-sm-9">
+                      
+                        <!-- content -->
+                        <div class="col-sm-12">    
+                          <div class="page-header text-muted">
+                            <h3>發佈留言</h3>
+                          </div> 
+                        </div>
+                        <div id="usernew">
+                            <div class="col-sm-12"> 
+                            <%- include('form'); %>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">    
+                          <div class="page-header text-muted">
+                           <h3>最新留言</h3>
+                          </div> 
+                        </div>
+                        
+                        <!--/top story-->
+                        <div class="row">    
+                          <div class="col-sm-12">
+                             <div id="userupdate"></div>                                                                                   
+                              <script src="js/script.js"></script>
+                          </div>
+                         <div class="col-sm-12">
+                          <div class="page-header text-muted divider">
+                            聯絡我們
+                          </div>
+                        </div>
+                      
+                        <div class="row" id="footer">    
+                          <div class="col-sm-6">
+                             <a href="https://github.com/Shin9626" class="pull-left"><img src="img/git.png" class="img-circle"></a＞
+                            <small class="text-muted"> </small>
+                            <a href="https://plus.google.com/u/0/110006317009842519867" class="pull-left"><img src="img/google.png" class="img-circle"></a>          
+                            <small class="text-muted"> </small>              
+                            <a href="https://www.instagram.com/penspulse" class="pull-left"><img src="img/ig.png" class="img-circle"></a>                                           
+                          </div>
+
+                          <div class="col-sm-12">     
+                            <hr  color="#00FF00" size="10" >                     
+                            <a href="#" class="pull-right">©Copyright Inc.</a>
+                          </div>
+                        </div>          
+                        </div>                                
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->
+        </div>
+    </div>
+</div>
+</div>
+	</body>
+</html>
