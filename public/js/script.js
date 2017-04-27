@@ -82,13 +82,15 @@ function readUser(event) {
 
 // Upadate Pass Check
 function editPassChecker(event) {
+  $(this).after("<div class='checkpass1'></div>");
     event.preventDefault();
             $.ajax({
               type: 'GET',
               url: '/person/' + $(this).attr('rel').substr(0,24)
              }).done(function( res ) {
               var html = new EJS({url: 'views/editpass.ejs'}).render(res);
-              $("#checkpass1").html(html);          
+              
+              $(".checkpass1").html(html);          
             });  
 
 };
@@ -140,13 +142,14 @@ function submitUser(event) {
 
 // Delete User
 function delPassChecker(event) {
+     $(this).after("<div class='checkpass'></div>");
     event.preventDefault();
             $.ajax({
               type: 'GET',
               url: '/person/' + $(this).attr('rel').substr(0,24)
              }).done(function( res ) {
               var html = new EJS({url: 'views/delpass.ejs'}).render(res);
-              $("#checkpass").html(html);          
+              $(".checkpass").html(html);          
             });  
 };
 
@@ -179,7 +182,6 @@ function readAbout(event) {
       $("#main").html(html);
      
     });
-     $(window).scrollTop("0");
 };
 
 
